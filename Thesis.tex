@@ -1,0 +1,66 @@
+%%%%% --------------------------------------------------------------------------------
+%%
+%%                               Document Template
+%%
+%%%%% --------------------------------------------------------------------------------
+%% Copyright (C) Huangrui Mo <huangrui.mo@gmail.com> 
+%% This is free software: you can redistribute it and/or modify it
+%% under the terms of the GNU General Public License as published by
+%% the Free Software Foundation, either version 3 of the License, or
+%% (at your option) any later version.
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%************************ Document Class Declaration ******************************
+%%
+\documentclass{Style/ucasproposal}% thesis template of UCAS
+%% Multiple optional arguments:
+%% [scheme = plain] % for thesis writing of international students
+%% [<singlesided|doublesided|printcopy>] % single-sided, double-sided, or print layout
+%% [draftversion] % show draft version information, default is no show
+%% [fontset = <adobe|...>] % specify font set, default is automatic detection
+%% [standard options for ctex class]
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%************************* Command Define and Settings ****************************
+%%
+\usepackage{Style/commons}% common settings
+%% usage: \usepackage[option1,option2,...,optionN]{commons}
+%% Multiple optional arguments:
+%% [<numbered|authoryear|alpha>] % citation and reference style
+%% <numbered>: textual: Jones [1]; parenthetical: [1]. default style
+%% <authoryear>: textual: Jones (1995); parenthetical: (Jones, 1995)
+%% <alpha>: textual: not available; parenthetical: [Jon95]
+%% [myhdr] % one available header and footer style, will enable fancyhdr
+%% [lscape] % provide landscape layout environment
+%% [geometry] % configure page layout by geometry package
+%% [list] % enable enhanced list environments, useful for Algorithm and Coding
+%% [color] % enable color package to use color, default package is xcolor
+%% [background] % enable page background, will auto enable color package
+%% [tikz] % enable tikz for complex diagrams, will auto enbale color package
+%% [table] % enable a table package for complex tables, default is ctable
+%% [math] % enable some extra math packages
+\usepackage{Style/custom}% user defined commands
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************** Content *****************************************
+%%
+\begin{document}
+%%
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************** Frontmatter *************************************
+%%
+\input{Tex/Frontpages}
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************** Mainmatter **************************************
+%%
+\input{Tex/Main_Content}%
+%%%%% --------------------------------------------------------------------------------
+%%
+%%%%******************************* Backmatter ***************************************
+%%
+\bibliography{Biblio/ref}%
+%%
+\end{document}
+%%%%% --------------------------------------------------------------------------------
