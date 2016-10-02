@@ -1,4 +1,4 @@
-ucasthesis stable release
+ucasproposal stable release
 ==========
 
 (模板下载请点击当前页面右边的：Download ZIP)
