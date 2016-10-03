@@ -50,11 +50,14 @@
 %%
 %%%%******************************** Frontmatter *************************************
 %%
+\pagenumbering{roman}% page numbers with roman style
 \input{Tex/Frontpages}
 %%%%% --------------------------------------------------------------------------------
 %%
 %%%%******************************** Mainmatter **************************************
 %%
+\clearpage
+\pagenumbering{arabic}% restart page numbers with arabic style
 \input{Tex/Main_Content}%
 %%%%% --------------------------------------------------------------------------------
 %%
