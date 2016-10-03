@@ -157,9 +157,9 @@
     \begin{tabular}{lc}
       \UCAS@label@title & \UCASunderline[295pt]{\UCAS@value@title}
     \\
-      \UCAS@label@author & \UCASunderline[134pt]{\UCAS@value@author}\UCAS@label@authorid\UCASunderline[134pt]{\UCAS@value@authorid}
+      \UCAS@label@author & \UCASunderline[132pt]{\UCAS@value@author}\UCAS@label@authorid\UCASunderline[132pt]{\UCAS@value@authorid}
     \\
-      \UCAS@label@advisor & \UCASunderline[134pt]{\UCAS@value@advisor}\UCAS@label@advisortitle\UCASunderline[134pt]{\UCAS@value@advisortitle}
+      \UCAS@label@advisor & \UCASunderline[132pt]{\UCAS@value@advisor}\UCAS@label@advisortitle\UCASunderline[132pt]{\UCAS@value@advisortitle}
     \\
       \UCAS@label@degree & \UCASunderline[295pt]{\UCAS@value@degreetype\UCAS@value@degree}
     \\
