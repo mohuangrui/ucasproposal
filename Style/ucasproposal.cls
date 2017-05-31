@@ -95,7 +95,7 @@
 %% specifies the amount of space between paragraphs.
 \setlength{\parskip}{0.5ex plus 0.25ex minus 0.25ex}
 %% line spacing
-\renewcommand{\baselinestretch}{1.4} % line space setting
+\renewcommand{\baselinestretch}{1.3} % line space setting
 \raggedbottom % prevent adding vertical white space in strange places
 %% default pagestyle is page number at bottom without headers and footers
 \pagestyle{plain}
@@ -155,7 +155,7 @@
     \def\arraystretch{1.2}
     %\hskip -15pt
     \begin{tabular}{lc}
-      \UCAS@label@title & \UCASunderline[295pt]{\UCAS@value@title}
+        \UCAS@label@title & \UCASunderline[295pt]{\shortstack{\UCAS@value@title}}
     \\
       \UCAS@label@author & \UCASunderline[132pt]{\UCAS@value@author}\UCAS@label@authorid\UCASunderline[132pt]{\UCAS@value@authorid}
     \\
