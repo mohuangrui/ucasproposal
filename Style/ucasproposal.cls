@@ -155,7 +155,7 @@
     \def\arraystretch{1.2}
     %\hskip -15pt
     \begin{tabular}{lc}
-        \UCAS@label@title & \UCASunderline[295pt]{\shortstack{\UCAS@value@title}}
+      \UCAS@label@title & \UCASunderline[295pt]{\shortstack{\UCAS@value@title}}
     \\
       \UCAS@label@author & \UCASunderline[132pt]{\UCAS@value@author}\UCAS@label@authorid\UCASunderline[132pt]{\UCAS@value@authorid}
     \\
