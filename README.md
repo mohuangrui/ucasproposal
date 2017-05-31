@@ -13,4 +13,6 @@ Change log:
 
 2017-05-31 修正题目换行，标题居中对齐，一级标题使用汉字，二级标题用阿拉伯数字。问题/建议由张宇航同学提出。修改的文件为：ucasproposal.cls, ucasproposal.cfg, Frontpage.tex。
 
+2017-05-31 从 zepinglee/gbt-7714-2015 更新国标的参考文献样式文件。修改的文件为：gbt-7714-2015-numerical，gbt-7714-2015-author-year。
+
 2016-10-02 Release 中国科学院大学开题报告LaTeX 模板.
