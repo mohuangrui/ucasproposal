@@ -112,6 +112,10 @@
 \def\UCAS@underline[#1]#2{%
     \CJKunderline{\hbox to #1{\hfill#2\hfill}}}
 \def\UCASunderline{\@ifnextchar[\UCAS@underline\CJKunderline}
+%% special cell: \specialcell[<align2>]{align1}{text1\\text2};
+%% <align1>: t,c,b; <align2> l,c,r; @{} suppress spaces before and after text 
+\newcommand{\specialcell}[3][c]{%
+    \begin{tabular}[#2]{@{}#1@{}}#3\end{tabular}}
 %%%%% --------------------------------------------------------------------------------
 %%
 %%%%********************** Chinese Titlepage Items ***********************************
@@ -155,7 +159,8 @@
     \def\arraystretch{1.2}
     %\hskip -15pt
     \begin{tabular}{lc}
-      \UCAS@label@title & \UCASunderline[295pt]{\shortstack{\UCAS@value@title}}
+      %\UCAS@label@title & \UCASunderline[295pt]{\shortstack{\UCAS@value@title}}
+      \UCAS@label@title & \UCASunderline[295pt]{\specialcell[c]{b}{\UCAS@value@title}}
     \\
       \UCAS@label@author & \UCASunderline[132pt]{\UCAS@value@author}\UCAS@label@authorid\UCASunderline[132pt]{\UCAS@value@authorid}
     \\
