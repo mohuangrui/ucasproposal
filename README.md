@@ -6,9 +6,7 @@
 
 ## 重要建议
 
-* 关于 LaTeX 的知识性问题，请查阅 [ucasthesis 和 LaTeX 知识小站](https://github.com/mohuangrui/ucasthesis/wiki) 和 [LaTeX Wikibook](https://en.wikibooks.org/wiki/LaTeX)。
 * 关于 ucasproposal 的使用，请参见 [ucasthesis：中国科学院大学学位论文 LaTeX 模板](https://github.com/mohuangrui/ucasthesis)。
-* 使用邮件传播 ucasproposal 时，请先删除 `artratex.bat` 以防范 Dos 脚本的潜在风险。
 
 ## 模板简介
  
@@ -16,11 +14,13 @@
 
 ## 重要通知
 
-* `2018-04-02` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
+* `2019-01-10` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
 
 ## 更新记录
 
-* `2018-04-02` 模板进行了重大更新，修复了样式、字体、格式等许多问题。修改的文件为：所有文件。
+* `2019-01-10` 采用 [zepinglee](https://github.com/zepinglee) 基于国标样式为 ucas 所定制文献样式：[ucas 样式分支](https://github.com/CTeX-org/gbt7714-bibtex-style/tree/ucas)。文献样式设定的更多讨论可见：[文献样式](https://github.com/mohuangrui/ucasthesis/wiki/%E6%96%87%E7%8C%AE%E6%A0%B7%E5%BC%8F)。
+
+* `2018-04-02` 模板进行了重大更新，修复了样式、字体、格式等许多问题。
 
 * `2018-02-06` 将模板的兼容性进一步扩展。当前模板兼容操作系统 Windows，Linux，MacOS 和 LaTeX 编译引擎 pdflatex，xelatex，lualatex。
 
