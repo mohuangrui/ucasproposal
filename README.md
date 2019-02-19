@@ -14,19 +14,19 @@
 
 ## 重要通知
 
-* `2019-01-10` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
+* `2019-02-20` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
 
 ## 更新记录
 
-* `2019-01-10` 采用 [zepinglee](https://github.com/zepinglee) 基于国标样式为 ucas 所定制文献样式：[ucas 样式分支](https://github.com/CTeX-org/gbt7714-bibtex-style/tree/ucas)。文献样式设定的更多讨论可见：[文献样式](https://github.com/mohuangrui/ucasthesis/wiki/%E6%96%87%E7%8C%AE%E6%A0%B7%E5%BC%8F)。
+* `2019-02-20` 根据 [opt-gaobin, issue #100](https://github.com/mohuangrui/ucasthesis/issues/100) ，增加定理、定义、证明等数学环境。根据 [DRjy, issue #102](https://github.com/mohuangrui/ucasthesis/issues/102) ，调整 \mathcal 字体样式。根据 [zike Liu, email] ，适当缩减目录列表的缩进。根据 [xiaoyaoE, issue #105](https://github.com/mohuangrui/ucasthesis/issues/105) ，使数字字体和英文字体一致。完善中文版和国际版之间的中英格式切换。
 
 * `2018-04-02` 模板进行了重大更新，修复了样式、字体、格式等许多问题。
 
 * `2018-02-06` 将模板的兼容性进一步扩展。当前模板兼容操作系统 Windows，Linux，MacOS 和 LaTeX 编译引擎 pdflatex，xelatex，lualatex。
 
-* `2017-05-31` 修正题目换行，标题居中对齐，一级标题使用汉字，二级标题用阿拉伯数字。问题/建议由张宇航同学提出。
+* `2017-05-31` 根据 [张宇航同, email] ，修正题目换行，标题居中对齐，一级标题使用汉字，二级标题用阿拉伯数字。
 
-* `2016-10-02` 在刘晓彤同学提供 Word 版本和测试帮助下，发布此 LaTeX 模板.
+* `2016-10-02` 根据 [刘晓彤, email] 提供 Word 版本和测试帮助下，发布此 LaTeX 模板.
 
 ## 用户指南
 

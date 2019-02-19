@@ -140,22 +140,35 @@
 %-
 %-> Chinese item commands
 %-
-\newcommand{\schoollogo}[2]{\def\ucas@value@schoollogo{\includegraphics[#1]{#2}}}
-\renewcommand{\title}[2][\ucas@value@title]{%
-  \def\ucas@value@title{#2}
-  %\def\ucas@value@titlemark{\MakeUppercase{#1}}}
-  \def\ucas@value@titlemark{#1}}
-\renewcommand{\@title}{\ucas@value@titlemark}
-\renewcommand{\author}[1]{\def\ucas@value@author{#1}}
-\newcommand{\authorid}[1]{\def\ucas@value@authorid{#1}}
-\newcommand{\advisor}[1]{\def\ucas@value@advisor{#1}}
-\newcommand{\advisortitle}[1]{\def\ucas@value@advisortitle{#1}}
-\newcommand{\degree}[1]{\def\ucas@value@degree{#1}}
-\newcommand{\degreetype}[1]{\def\ucas@value@degreetype{#1}}
-\newcommand{\major}[1]{\def\ucas@value@major{#1}}
-\newcommand{\field}[1]{\def\ucas@value@field{#1}}
-\newcommand{\institute}[1]{\def\ucas@value@institute{#1}}
-\newcommand{\chinesedate}[1]{\def\ucas@value@chinesedate{#1}}
+\def\ucas@value@ch@schoollogo{}
+\newcommand{\schoollogo}[2]{\def\ucas@value@ch@schoollogo{\includegraphics[#1]{#2}}}
+\def\ucas@value@ch@title{}
+\def\ucas@value@ch@titlemark{}
+\renewcommand{\title}[2][\ucas@value@ch@title]{%
+  \def\ucas@value@ch@title{#2}
+  %\def\ucas@value@ch@titlemark{\MakeUppercase{#1}}}
+  \def\ucas@value@ch@titlemark{#1}}
+\renewcommand{\@title}{\ucas@value@ch@titlemark}
+\def\ucas@value@ch@author{}
+\renewcommand{\author}[1]{\def\ucas@value@ch@author{#1}}
+\def\ucas@value@ch@authorid{}
+\newcommand{\authorid}[1]{\def\ucas@value@ch@authorid{#1}}
+\def\ucas@value@ch@advisor{}
+\newcommand{\advisor}[1]{\def\ucas@value@ch@advisor{#1}}
+\def\ucas@value@ch@advisortitle{}
+\newcommand{\advisortitle}[1]{\def\ucas@value@ch@advisortitle{#1}}
+\def\ucas@value@ch@degree{}
+\newcommand{\degree}[1]{\def\ucas@value@ch@degree{#1}}
+\def\ucas@value@ch@degreetype{}
+\newcommand{\degreetype}[1]{\def\ucas@value@ch@degreetype{#1}}
+\def\ucas@value@ch@major{}
+\newcommand{\major}[1]{\def\ucas@value@ch@major{#1}}
+\def\ucas@value@ch@field{}
+\newcommand{\field}[1]{\def\ucas@value@ch@field{#1}}
+\def\ucas@value@ch@institute{}
+\newcommand{\institute}[1]{\def\ucas@value@ch@institute{#1}}
+\def\ucas@value@ch@date{}
+\newcommand{\chinesedate}[1]{\def\ucas@value@ch@date{#1}}
 %-
 %-> Redefine Chinese style
 %-
@@ -167,31 +180,31 @@
         \zihao{-3}\bfseries
         \vspace*{10pt}
 
-        {\ucas@value@schoollogo}
+        {\ucas@value@ch@schoollogo}
 
         \vspace*{20pt}
 
-        {\zihao{1}\bfseries\sffamily \ucas@label@thesis}
+        {\zihao{1}\bfseries\sffamily \ucas@label@ch@thesis}
 
         \vspace*{195pt}
 
         \def\tabcolsep{1pt}
         \def\arraystretch{1.2}
         \begin{tabular}{lc}
-            %\ucas@label@title & \ulenhance{\ulextend{\shortstack{\ucas@value@title}}}\\
-            \ucas@label@title & \ulenhance{\ulextend{\specialcell[c]{b}{\ucas@value@title}}}\\
-            \ucas@label@author & \ulenhance{\ulextend[151pt]{\hspace*{-\ulhshift}\ucas@value@author}}\ucas@label@authorid\ulenhance{\ulextend[170pt]{\hspace*{-\ulhshift}\ucas@value@authorid}}\\
-            \ucas@label@advisor & \ulenhance{\ulextend[151pt]{\hspace*{-\ulhshift}\ucas@value@advisor}}\ucas@label@advisortitle\ulenhance{\ulextend[170pt]{\hspace*{-\ulhshift}\ucas@value@advisortitle}}\\
-            \ucas@label@degree & \ulenhance{\ulextend{\ucas@value@degreetype\ucas@value@degree}}\\
-            \ucas@label@major & \ulenhance{\ulextend{\ucas@value@major}}\\
-            \ucas@label@field & \ulenhance{\ulextend{\ucas@value@field}}\\
-            \ucas@label@institute & \ulenhance{\ulextend{\ucas@value@institute}}\\
-            \ucas@label@date & \ulenhance{\ulextend{\ucas@value@chinesedate}}
+            %\ucas@label@ch@title & \ulenhance{\ulextend{\shortstack{\ucas@value@ch@title}}}\\
+            \ucas@label@ch@title & \ulenhance{\ulextend{\specialcell[c]{b}{\ucas@value@ch@title}}}\\
+            \ucas@label@ch@author & \ulenhance{\ulextend[151pt]{\hspace*{-\ulhshift}\ucas@value@ch@author}}\ucas@label@ch@authorid\ulenhance{\ulextend[170pt]{\hspace*{-\ulhshift}\ucas@value@ch@authorid}}\\
+            \ucas@label@ch@advisor & \ulenhance{\ulextend[151pt]{\hspace*{-\ulhshift}\ucas@value@ch@advisor}}\ucas@label@ch@advisortitle\ulenhance{\ulextend[170pt]{\hspace*{-\ulhshift}\ucas@value@ch@advisortitle}}\\
+            \ucas@label@ch@degree & \ulenhance{\ulextend{\ucas@value@ch@degreetype\ucas@value@ch@degree}}\\
+            \ucas@label@ch@major & \ulenhance{\ulextend{\ucas@value@ch@major}}\\
+            \ucas@label@ch@field & \ulenhance{\ulextend{\ucas@value@ch@field}}\\
+            \ucas@label@ch@institute & \ulenhance{\ulextend{\ucas@value@ch@institute}}\\
+            \ucas@label@ch@date & \ulenhance{\ulextend{\ucas@value@ch@date}}
       \end{tabular}
 
       \vspace*{50pt}
 
-      {\ucas@label@mark}
+      {\ucas@label@ch@mark}
     \end{center}
     \clearpage
     \if@twoside
@@ -217,23 +230,97 @@
     \fi
 }
 %---------------------------------------------------------------------------%
-%->> Customized settings
+%->> Structure elements
 %---------------------------------------------------------------------------%
 \ifucas@plain%
-    \def\bibetal{\ucas@value@enbibetal}
-    \def\biband{\ucas@value@enbiband}
+    \renewcommand{\contentsname}{\ucas@label@en@tocname}
+    \renewcommand{\listfigurename}{\ucas@label@en@lsfigname}
+    \renewcommand{\listtablename}{\ucas@label@en@lstabname}
+    \renewcommand{\refname}{\ucas@label@en@bibname}
+    \newcommand{\algname}{\ucas@label@en@algname}
+    \newcommand{\bibetal}{\ucas@label@en@bibetal}
+    \newcommand{\biband}{\ucas@label@en@biband}
+    \newcommand{\axiomname}{\ucas@label@en@axiomname}
+    \newcommand{\theoremname}{\ucas@label@en@theoremname}
+    \newcommand{\lemmaname}{\ucas@label@en@lemmaname}
+    \newcommand{\corollaryname}{\ucas@label@en@corollaryname}
+    \newcommand{\assertionname}{\ucas@label@en@assertionname}
+    \newcommand{\propositionname}{\ucas@label@en@propositionname}
+    \newcommand{\conjecturename}{\ucas@label@en@conjecturename}
+    \newcommand{\definitionname}{\ucas@label@en@definitionname}
+    \newcommand{\examplename}{\ucas@label@en@examplename}
+    \newcommand{\remarkname}{\ucas@label@en@remarkname}
+    \renewcommand{\proofname}{\ucas@label@en@proofname}
 \else
-    \def\bibetal{\ucas@value@chbibetal}
-    \def\biband{\ucas@value@chbiband}
+    \renewcommand{\contentsname}{\ucas@label@ch@tocname}
+    \renewcommand{\listfigurename}{\ucas@label@ch@lsfigname}
+    \renewcommand{\listtablename}{\ucas@label@ch@lstabname}
+    \newcommand{\algname}{\ucas@label@ch@algname}
+    \renewcommand{\refname}{\ucas@label@ch@bibname}
+    \newcommand{\bibetal}{\ucas@label@ch@bibetal}
+    \newcommand{\biband}{\ucas@label@ch@biband}
+    \newcommand{\axiomname}{\ucas@label@ch@axiomname}
+    \newcommand{\theoremname}{\ucas@label@ch@theoremname}
+    \newcommand{\lemmaname}{\ucas@label@ch@lemmaname}
+    \newcommand{\corollaryname}{\ucas@label@ch@corollaryname}
+    \newcommand{\assertionname}{\ucas@label@ch@assertionname}
+    \newcommand{\propositionname}{\ucas@label@ch@propositionname}
+    \newcommand{\conjecturename}{\ucas@label@ch@conjecturename}
+    \newcommand{\definitionname}{\ucas@label@ch@definitionname}
+    \newcommand{\examplename}{\ucas@label@ch@examplename}
+    \newcommand{\remarkname}{\ucas@label@ch@remarkname}
+    \renewcommand{\proofname}{\ucas@label@ch@proofname}
 \fi
+%---------------------------------------------------------------------------%
+%->> Structure elements configuration
+%---------------------------------------------------------------------------%
+%- section
+\ctexset {
+    section = {
+        format = \centering\zihao{4}\sffamily,
+        number = {\chinese{section}},
+        aftername = \quad,
+        beforeskip = {24pt},
+        afterskip = {6pt},
+    }
+}
+%- subsection
+\ctexset {
+    subsection = {
+        format = \sffamily,
+        aftername = \quad,
+        beforeskip = {12pt},
+        afterskip = {6pt},
+    }
+}
+%- subsubsection
+\ctexset {
+    subsubsection = {
+        format = \sffamily,
+        aftername = \quad,
+        beforeskip = {12pt},
+        afterskip = {6pt},
+    }
+}
 %---------------------------------------------------------------------------%
 %->> Configure table of contents
 %---------------------------------------------------------------------------%
-%- define spacing and length
-\def\@dotsep{1.5mu}% spacing for dots
-\def\@pnumwidth{2em}% spacing between titles and page numbers
-\def\@tocrmarg{2em}% right margin indentation
-\def\@chaptervspace{1ex}% spacing between chapter titles
+%- the table of contents is specified by defining \l@chapter, \l@section, ...
+%- most commands are then defined with the \@dottedtocline:
+%- \@dottedtocline{⟨level⟩}{⟨indent⟩}{⟨numwidth⟩}{⟨title⟩}{⟨page⟩}
+%- ⟨level⟩    an entry is produced only if ⟨level⟩ <= value of the tocdepth counter
+%-            note, \chapter is level 0, \section is level 1, etc
+%- ⟨indent⟩   indentation from the outer left margin of the start of the contents line
+%- ⟨numwidth⟩ width of a box in which the section number is to go
+%- <title>    title
+%- <page>     page number
+
+%- parameters for spacing and length in toc
+\def\@dotsep{1.5mu}% separation between dots in mu units
+\def\@pnumwidth{2em}% width of a box in which the page number is put
+\def\@tocrmarg{2em}% right margin for multiple line entries, \@tocrmarg ≥ \@pnumwidth
+\def\@sectionvspace{1ex}% vertical space between section titles
+
 %- redefine dottedtocline from classes.dtx and latex.ltx
 \renewcommand*{\@dottedtocline}[5]{% [<level>,<indent>,<numwidth>,<title>,<page>]
     \ifnum #1>\c@tocdepth \else
@@ -276,7 +363,7 @@
 \renewcommand*\l@section[2]{% [<title>,<page>]
     \ifnum \c@tocdepth >\z@
         \addpenalty\@secpenalty
-        \addvspace{1.0em \@plus\p@}%
+        \addvspace{\@sectionvspace \@plus\p@}%
         \setlength\@tempdima{1.5em}%
         \begingroup
             \parindent \z@ \rightskip \@pnumwidth
@@ -290,6 +377,14 @@
         \endgroup
     \fi
 }
+%- redefine indentation for others
+%\renewcommand*\l@section{\@dottedtocline{1}{0em}{1em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{1em}{2em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{2em}{2em}}
+\renewcommand*\l@paragraph{\@dottedtocline{4}{3em}{3em}}
+\renewcommand*\l@subparagraph{\@dottedtocline{5}{4em}{3em}}
+\renewcommand*\l@figure{\@dottedtocline{1}{0em}{1em}}
+\renewcommand*\l@table{\@dottedtocline{1}{0em}{1em}}
 %---------------------------------------------------------------------------%
 \endinput
 
