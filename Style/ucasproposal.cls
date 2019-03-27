@@ -129,7 +129,7 @@
 \newcommand{\ulenhance}[2][1pt]{% enhanced underline
     \def\ULthickness{#1}% set thickness
     \expandafter\ulunify\expandafter{#2}}% linebreak fix
-\newcommand{\ulhshift}{-4em}% horizontal shift on underline
+\newcommand{\ulhshift}{-3em}% horizontal shift on underline
 \newcommand{\ulextend}[2][350pt]{% extend underline length
     \hbox to #1{\hfill\hspace*{\ulhshift}#2\hfill}}
 %- special cell
