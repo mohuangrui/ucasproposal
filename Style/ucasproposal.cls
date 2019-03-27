@@ -12,7 +12,7 @@
 %->> Identification
 %---------------------------------------------------------------------------%
 \NeedsTeXFormat{LaTeX2e}%
-\ProvidesClass{ucasproposal}[2014/10/01 v0.1 LaTeX document class]%
+\ProvidesClass{ucasproposal}[2014/10/01 v1.0 LaTeX document class]%
 %---------------------------------------------------------------------------%
 %->> Declare options
 %---------------------------------------------------------------------------%
