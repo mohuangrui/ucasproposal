@@ -18,7 +18,7 @@
 
 ## 更新记录
 
-* `2019-03-25` 根据 [DRjy, muzimuzhi, issue #127](https://github.com/mohuangrui/ucasthesis/issues/127) ，为“摘要”等无需在目录中显示的结构元素建立书签。根据 [muzimuzhi, issue #130](https://github.com/mohuangrui/ucasthesis/issues/130) ，修正对\voffset的使用。
+* `2019-03-25` 根据 [muzimuzhi, issue #130](https://github.com/mohuangrui/ucasthesis/issues/130) ，修正对 \voffset 的使用。
 
 * `2019-03-14` 根据 [opt-gaobin, issue #121](https://github.com/mohuangrui/ucasthesis/issues/121) ，修正中文标点使下划线断掉的问题。根据 [Guoqiang Zhang, email; weili-ict, issue #120](https://github.com/mohuangrui/ucasthesis/issues/120) ，修复 \proofname 命令对2015年及更早 LaTeX 编译器的兼容性问题。
 
