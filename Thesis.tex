@@ -13,7 +13,7 @@
 %---------------------------------------------------------------------------%
 \documentclass{Style/ucasproposal}%
 %- Multiple optional arguments:
-%- [<singlesided|doublesided|printcopy>]% set one or two sided eprint or print
+%- [<oneside|twoside|print>]% oneside eprint, twoside eprint, or paper print
 %- [fontset=<adobe|...>]% specify font set to replace automatic detection
 %- [plain]% thesis writing of international students
 %- [draftversion]% show draft version information
@@ -21,7 +21,7 @@
 %---------------------------------------------------------------------------%
 %->> Document settings
 %---------------------------------------------------------------------------%
-\usepackage[authoryear]{Style/artratex}% document settings
+\usepackage[authoryear,xhf]{Style/artratex}% document settings
 %- usage: \usepackage[option1,option2,...,optionN]{artratex}
 %- Multiple optional arguments:
 %- [bibtex|biber]% set bibliography processor and package
@@ -32,13 +32,14 @@
 %- <alpha>: textual: not available; parenthetical: [Jon95]
 %- [geometry]% reconfigure page layout via geometry package
 %- [lscape]% provide landscape layout environment
-%- [myhdr]% enable header and footer via fancyhdr package
+%- [xhf]% disable header and footer via fancyhdr package
 %- [color]% provide color support via xcolor package
 %- [background]% enable page background
 %- [tikz]% provide complex diagrams via tikz package
 %- [table]% provide complex tables via ctable package
 %- [list]% provide enhanced list environments for algorithm and coding
 %- [math]% enable some extra math packages
+%- [xlink]% disable link colors
 \usepackage{Style/artracom}% user defined commands
 %---------------------------------------------------------------------------%
 %->> Document inclusion
@@ -47,12 +48,16 @@
 %---------------------------------------------------------------------------%
 %->> Document content
 %---------------------------------------------------------------------------%
+%-
+%-> Titlepage information
+%-
+\input{Tex/Frontinfo}%
 \begin{document}
 %-
 %-> Frontmatter: title page, abstract, content list, symbol list, preface
 %-
 \pagenumbering{roman}% page numbers with roman style
-\input{Tex/Frontpages}% title page, abstract, dedication
+\input{Tex/Frontmatter}% title page, abstract
 %-
 %-> Mainmatter
 %-
