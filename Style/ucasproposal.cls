@@ -307,6 +307,7 @@
 \ctexset {
     subsection = {
         format = \sffamily,
+        numberformat = \rmfamily,
         aftername = \quad,
         beforeskip = {12pt},
         afterskip = {6pt},
@@ -316,6 +317,7 @@
 \ctexset {
     subsubsection = {
         format = \sffamily,
+        numberformat = \rmfamily,
         aftername = \quad,
         beforeskip = {12pt},
         afterskip = {6pt},
