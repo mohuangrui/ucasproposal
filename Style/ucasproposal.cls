@@ -400,12 +400,12 @@
 }
 %- redefine indentation for others
 %\renewcommand*\l@section{\@dottedtocline{1}{0em}{1em}}
-\renewcommand*\l@subsection{\@dottedtocline{2}{1em}{2em}}
-\renewcommand*\l@subsubsection{\@dottedtocline{3}{2em}{2em}}
-\renewcommand*\l@paragraph{\@dottedtocline{4}{3em}{3em}}
-\renewcommand*\l@subparagraph{\@dottedtocline{5}{4em}{3em}}
-\renewcommand*\l@figure{\@dottedtocline{1}{0em}{1em}}
-\renewcommand*\l@table{\@dottedtocline{1}{0em}{1em}}
+\renewcommand*\l@subsection{\@dottedtocline{2}{1em}{1.8em}}
+\renewcommand*\l@subsubsection{\@dottedtocline{3}{2em}{2.8em}}
+\renewcommand*\l@paragraph{\@dottedtocline{4}{3em}{3.8em}}
+\renewcommand*\l@subparagraph{\@dottedtocline{5}{4em}{4.8em}}
+\renewcommand*\l@figure{\@dottedtocline{1}{0em}{0.8em}}
+\renewcommand*\l@table{\@dottedtocline{1}{0em}{0.8em}}
 %---------------------------------------------------------------------------%
 \endinput
 
