@@ -14,9 +14,11 @@
 
 ## 重要通知
 
-* `2019-04-24` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
+* `2019-06-15` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
 
 ## 更新记录
+
+* `2019-06-15` 根据 [HaorenWang, issue #177](https://github.com/mohuangrui/ucasthesis/issues/177) 调整矢量、矩阵、张量字体样式。
 
 * `2019-06-09` 根据 [DRjy, issue #170](https://github.com/mohuangrui/ucasthesis/issues/170) 轻微缩减目录中编号与标题的间距；根据 [e71828, issue #174](https://github.com/mohuangrui/ucasthesis/issues/174) 轻微增加页眉中编号与标题的间距。
 
