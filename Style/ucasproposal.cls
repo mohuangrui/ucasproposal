@@ -63,6 +63,21 @@
 %->> Required packages
 %---------------------------------------------------------------------------%
 \RequirePackage{ifxetex}% LaTeX engine detection
+\RequirePackage{expl3}% LaTeX3 programming environment
+\ExplSyntaxOn
+\newcommand{\ucaslntotab}[2][1pt]{% convert lines into table lines
+    \seq_set_split:NnV \l_tmpa_seq {\\} {#2}
+    \clist_set_from_seq:NN \l_tmpa_clist \l_tmpa_seq
+    \clist_clear:N \l_tmpb_clist
+    \clist_map_inline:Nn \l_tmpa_clist
+      {%
+        \clist_put_right:Nn \l_tmpb_clist 
+          { \ulenhance[#1]{\ulextend{##1}} }
+      }
+    %\clist_show:N\l_tmpb_clist% show the content of comma list
+    \clist_use:Nn \l_tmpb_clist { \\ & }
+}
+\ExplSyntaxOff
 %---------------------------------------------------------------------------%
 %->> Load class configuration
 %---------------------------------------------------------------------------%
@@ -200,13 +215,14 @@
         \def\arraystretch{1.2}
         \begin{tabular}{lc}
             %\ucas@label@ch@title & \ulenhance{\ulextend{\shortstack{\ucas@value@ch@title}}}\\
-            \ucas@label@ch@title & \ulenhance{\ulextend{\specialcell[c]{b}{\ucas@value@ch@title}}}\\
+            %\ucas@label@ch@title & \ulenhance{\ulextend{\specialcell[c]{b}{\ucas@value@ch@title}}}\\
+            \ucas@label@ch@title & \ucaslntotab{\ucas@value@ch@title}\\
             \ucas@label@ch@author & \ulenhance{\ulextend[151pt]{\hspace*{-\ulhshift}\ucas@value@ch@author}}\ucas@label@ch@authorid\ulenhance{\ulextend[170pt]{\hspace*{-\ulhshift}\ucas@value@ch@authorid}}\\
             \ucas@label@ch@advisor & \ulenhance{\ulextend[151pt]{\hspace*{-\ulhshift}\ucas@value@ch@advisor}}\ucas@label@ch@advisortitle\ulenhance{\ulextend[170pt]{\hspace*{-\ulhshift}\ucas@value@ch@advisortitle}}\\
             \ucas@label@ch@degree & \ulenhance{\ulextend{\ucas@value@ch@degreetype\ucas@value@ch@degree}}\\
             \ucas@label@ch@major & \ulenhance{\ulextend{\ucas@value@ch@major}}\\
             \ucas@label@ch@field & \ulenhance{\ulextend{\ucas@value@ch@field}}\\
-            \ucas@label@ch@institute & \ulenhance{\ulextend{\ucas@value@ch@institute}}\\
+            \ucas@label@ch@institute & \ucaslntotab{\ucas@value@ch@institute}\\
             \ucas@label@ch@date & \ulenhance{\ulextend{\ucas@value@ch@date}}
       \end{tabular}
 
