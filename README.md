@@ -14,15 +14,17 @@
 
 ## 重要通知
 
-* `2019-10-12` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
+* `2019-10-21` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
 
 ## 更新记录
 
-* `2019-10-12` 根据 [Fancy0609, muzimuzhi, issue #195](https://github.com/mohuangrui/ucasthesis/issues/195) 调整由 AutoFakeBold 控制的伪粗体加粗程度。
+* `2019-10-12` 根据 [huiwenzhang, issue #198](https://github.com/mohuangrui/ucasthesis/issues/198) 修复`mainmatter`下`\chapter*`的页眉错误。
 
-* `2019-10-11` 根据 [Pantrick, issue #190](https://github.com/mohuangrui/ucasthesis/issues/190) 采用 [muzimuzhi](https://github.com/muzimuzhi) 提供的方法实现 \title{} 和 \institute{} 的自动换行功能。
+* `2019-10-12` 根据 [Fancy0609, muzimuzhi, issue #195](https://github.com/mohuangrui/ucasthesis/issues/195) 调整由`AutoFakeBold`控制的伪粗体加粗程度。
 
-* `2019-08-01` 根据 [vectorliu, issue #183](https://github.com/mohuangrui/ucasthesis/issues/183) 修改英文模式下的 plain 选项为 scheme=plain 以消除对 Algorithm 样式的修改。
+* `2019-10-11` 根据 [Pantrick, issue #190](https://github.com/mohuangrui/ucasthesis/issues/190) 采用 [muzimuzhi](https://github.com/muzimuzhi) 提供的方法实现`\advisor{}`和`\institute{}`的自动换行功能。
+
+* `2019-08-01` 根据 [vectorliu, issue #183](https://github.com/mohuangrui/ucasthesis/issues/183) 修改英文模式下的`plain`选项为`scheme=plain`以消除对`Algorithm`样式的修改。
 
 * `2019-06-15` 根据 [HaorenWang, issue #177](https://github.com/mohuangrui/ucasthesis/issues/177) 调整矢量、矩阵、张量字体样式。
 
