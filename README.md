@@ -14,9 +14,11 @@
 
 ## 重要通知
 
-* `2019-10-21` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
+* `2020-01-09` 模板样式进行了修改，请查看下面的修改描述，以决定是否需要更新。
 
 ## 更新记录
+
+* `2020-01-09` 根据 [NineSH, issue #223](https://github.com/mohuangrui/ucasthesis/issues/223) 修复`bicaption`错误。
 
 * `2019-10-12` 根据 [huiwenzhang, issue #198](https://github.com/mohuangrui/ucasthesis/issues/198) 修复`mainmatter`下`\chapter*`的页眉错误。
 
