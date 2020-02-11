@@ -18,6 +18,8 @@
 
 ## 更新记录
 
+* `2020-02-11` 根据 [ck2019ML, issue #182](https://github.com/mohuangrui/ucasthesis/issues/182)、[univeryinli, issue #229](https://github.com/mohuangrui/ucasthesis/issues/229) 将ucasproposal在Overleaf发布并支持调用外部字体，详见[字体配置](https://github.com/mohuangrui/ucasthesis/wiki/字体配置)。
+
 * `2020-01-09` 根据 [NineSH, issue #223](https://github.com/mohuangrui/ucasthesis/issues/223) 修复`bicaption`错误。
 
 * `2019-10-12` 根据 [huiwenzhang, issue #198](https://github.com/mohuangrui/ucasthesis/issues/198) 修复`mainmatter`下`\chapter*`的页眉错误。
