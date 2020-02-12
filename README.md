@@ -2,11 +2,12 @@
 
 ## 模板下载
 
-请在页面右边点击：**Clone or download -> Download Zip**
+* 页面右边点击：**Clone or download -> Download Zip**
+* [Overleaf](https://github.com/mohuangrui/ucasthesis/wiki/字体配置#linuxoverleaf-系统的字体配置)
 
 ## 重要建议
 
-* 关于 ucasproposal 的使用，请参见 [ucasthesis：中国科学院大学学位论文 LaTeX 模板](https://github.com/mohuangrui/ucasthesis)。
+* 关于 ucasproposal 的使用，参见 [ucasthesis：中国科学院大学学位论文 LaTeX 模板](https://github.com/mohuangrui/ucasthesis)。
 
 ## 模板简介
  
@@ -62,4 +63,4 @@
 
 ## 用户指南
 
-* 模板的使用说明请参见 [ucasthesis：中国科学院大学学位论文 LaTeX 模板](https://github.com/mohuangrui/ucasthesis)
+* 模板的使用说明参见 [ucasthesis：中国科学院大学学位论文 LaTeX 模板](https://github.com/mohuangrui/ucasthesis)
