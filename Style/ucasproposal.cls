@@ -12,6 +12,10 @@
 %->> Identification
 %---------------------------------------------------------------------------%
 \NeedsTeXFormat{LaTeX2e}%
+\newcommand*\@iflatexlater{\@ifl@t@r\fmtversion}%
+\@iflatexlater{2017/01/01}{}{%
+    \ClassError{ucasproposal}{TeXLive/MikTex >= 2017 is required ...}{}%
+}
 \ProvidesClass{ucasproposal}[2014/10/01 v1.0 LaTeX document class]%
 %---------------------------------------------------------------------------%
 %->> Declare options
@@ -58,7 +62,10 @@
 %---------------------------------------------------------------------------%
 %->> Load class information
 %---------------------------------------------------------------------------%
-\LoadClass[UTF8,a4paper,zihao=-4]{ctexart}
+\LoadClass[UTF8,a4paper,zihao=-4]{ctexart}%
+\@ifclasslater{ctexbook}{2017/01/01}{}{%
+    \ClassError{ucasthesis}{ctex >= 2017/01/01 is required ...}{}%
+}
 %---------------------------------------------------------------------------%
 %->> Required packages
 %---------------------------------------------------------------------------%
