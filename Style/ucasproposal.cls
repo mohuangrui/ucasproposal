@@ -63,7 +63,7 @@
 %->> Load class information
 %---------------------------------------------------------------------------%
 \LoadClass[UTF8,a4paper,zihao=-4]{ctexart}%
-\@ifclasslater{ctexbook}{2017/01/01}{}{%
+\@ifclasslater{ctexart}{2017/01/01}{}{%
     \ClassError{ucasthesis}{ctex >= 2017/01/01 is required ...}{}%
 }
 %---------------------------------------------------------------------------%
