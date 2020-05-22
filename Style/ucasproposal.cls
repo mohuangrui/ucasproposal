@@ -142,7 +142,7 @@
 }
 %- underline
 \ifxetex%
-    %\RequirePackage{ulem}% loaded by xeCJKfntef
+    \RequirePackage{ulem}%
 \else%
     \RequirePackage{ulem}%
 \fi
