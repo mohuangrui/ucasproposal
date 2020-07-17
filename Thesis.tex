@@ -67,7 +67,11 @@
 %-
 %-> Backmatter: bibliography, glossary, index
 %-
-\bibliography{Biblio/ref}% bibliography
+\artxifstreq{\artxbib}{bibtex}{% enable bibtex
+    \bibliography{Biblio/ref}% bibliography
+}{%
+    \printbibliography% bibliography
+}
 \end{document}
 %---------------------------------------------------------------------------%
 
