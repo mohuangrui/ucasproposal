@@ -19,6 +19,8 @@
 
 ## 更新记录
 
+* `2021-09-27` [benkwoook, issue #359](https://github.com/mohuangrui/ucasthesis/issues/359)，增强 artratex.sty，提供去掉“引言”类章节的章节编号的功能。
+
 * `2020-07-28` [Tony, issue #299](https://github.com/mohuangrui/ucasthesis/issues/299)，更新 bibtex 样式。文献样式更多讨论可见：[文献样式](https://github.com/mohuangrui/ucasthesis/wiki/%E6%96%87%E7%8C%AE%E6%A0%B7%E5%BC%8F)。
 
 * `2020-07-22` [hushidong, zepinglee, issue #296](https://github.com/mohuangrui/ucasthesis/issues/296)，完善 biblatex 和 bibtex 样式。
