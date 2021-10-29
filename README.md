@@ -9,6 +9,10 @@
 
 * 关于 ucasproposal 的使用，参见 [ucasthesis：中国科学院大学学位论文 LaTeX 模板](https://github.com/mohuangrui/ucasthesis)。
 
+<h1 align="center">
+<img width="50%" src="https://github.com/mohuangrui/mohuangrui/blob/main/gallery/ucasproposal.gif" alt="ucasproposal">
+</h1>
+
 ## 模板简介
  
 * ucasproposal 用于撰写中国科学院大学开题报告，面向对象为国科大学生（硕、博及留学生）。
